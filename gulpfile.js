@@ -6,6 +6,7 @@ var simplevars = require('postcss-simple-vars');
 var nested = require('postcss-nested');
 var postcssImport = require('postcss-import');
 var browserSync = require('browser-sync').create();
+var mixins = require('postcss-mixins');
 
 gulp.task('default', function(){
 		console.log("it works");
@@ -13,7 +14,7 @@ gulp.task('default', function(){
 
 gulp.task('styles', function(){
 	return gulp.src('./app/assets/styles/style.css')
-	.pipe(postcss([postcssImport, simplevars, nested, autoprefixer]))
+	.pipe(postcss([postcssImport, mixins, simplevars, nested, autoprefixer]))
 	.pipe(gulp.dest('./app/temp/styles'));
 });
 
