@@ -1,7 +1,8 @@
 # travel-like-site-excersise
 
-###Build with:  
-*POSTCSS  
-*Gulp  
-*Waypoints.js  
-*Smoothscroll
+### Site built with:
+
+  - Postcss
+  - Gulp
+  - Waypoints.js
+  - Smoothscroll
